@@ -1,0 +1,12 @@
+.Task{
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 0;
+}
+.group2{
+    display: flex;
+}
+.group2>div{
+    display: flex;
+    align-items: center;
+}
