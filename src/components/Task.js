@@ -8,6 +8,8 @@ class Task extends Component {
           color:this.props.task.done?"#555":"black",
       }
   }
+  onChange=e=>{this.props.checkDone(this.props.task.id)}
+
   render() {
       const {task}=this.props;
     return <div className="Task" style={this.StyleCompleted()}>
@@ -15,15 +17,17 @@ class Task extends Component {
                 {task.title} <br/> {task.description}
             </div>
             <div className="group2">
-                <input type="checkbox"></input>
-                <div>X</div>
+                <input type="checkbox" onChange={this.onChange} defaultChecked={task.done}></input>
+                <button onClick={this.props.deleteTask.bind(this,task.id)}>X</button>
             </div>
         </div>;
   }
 }
 
 Task.propTypes={
-    task:PropTypes.object
+    task:PropTypes.object.isRequired,
+    checkDone:PropTypes.func.isRequired,
+    deleteTask:PropTypes.func.isRequired
 }
 
 export default Task;
