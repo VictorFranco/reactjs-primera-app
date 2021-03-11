@@ -36,10 +36,7 @@
     height: 50px;
 }
 @media (max-width: 500px) {
-    .Form input{
-        width: 90%;
-    }
-    .Form textarea{
-        width: 90%;
+    .Form button{
+        width: 80px;
     }
 }
