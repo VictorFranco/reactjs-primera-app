@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Task from './Task';
+import PropTypes from 'prop-types';
 
 class Tasks extends Component {
   render() {
@@ -7,6 +8,10 @@ class Tasks extends Component {
         return <Task key={e.id} task={e}/>
         });
   }
+}
+
+Tasks.propTypes={
+  tasks:PropTypes.array
 }
 
 export default Tasks;
