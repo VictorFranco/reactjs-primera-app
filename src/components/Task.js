@@ -18,7 +18,7 @@ class Task extends Component {
             </div>
             <div className="group2">
                 <input type="checkbox" onChange={this.onChange} defaultChecked={task.done}></input>
-                <button onClick={this.props.deleteTask.bind(this,task.id)}>X</button>
+                <button onClick={this.props.deleteTask.bind(this,task.id)} className="btn_delete">X</button>
             </div>
         </div>;
   }

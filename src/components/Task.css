@@ -5,8 +5,20 @@
 }
 .group2{
     display: flex;
+    align-items: center;
 }
 .group2>div{
     display: flex;
     align-items: center;
+}
+.btn_delete{
+    background: #ff2626;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15px;
 }
