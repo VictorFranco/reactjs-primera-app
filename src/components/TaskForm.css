@@ -2,10 +2,20 @@
     display: flex;
     justify-content: space-between;
 }
-.Form>button{
-    align-self: center;
+.Form>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Form button{
+    width: 100px;
+    height: 40px;
     padding: 5px;
     font-size: 16px;
+    border-radius: 5px;
+}
+.Form button:first-child{
+    background: lightsteelblue;
 }
 .Form input{
     width: 300px;
@@ -15,4 +25,5 @@
 }
 .Form textarea{
     width: 100%;
+    height: 50px;
 }
