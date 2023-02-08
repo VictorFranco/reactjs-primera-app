@@ -11,3 +11,7 @@ Es posible:
 ## Screenshots
 
 ![cap1](https://i.imgur.com/7B4E02h.jpg "Aplicaci&oacute;n en ejecuci&oacute;n")
+
+## LICENSE
+
+[MIT](LICENSE "LICENSE")
